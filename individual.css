@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black ;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+}
+
+.signup-container {
+    max-width: 400px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.creede {
+    display: block;
+    margin: 100px;
+    width: 143.2px;
+    height: 50px;
+    top: 131.5;
+    left: 648px;
+
+
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #151515;
+}
+
+.opt_ {
+    text-align: center;
+    color: white;
+}
+
+.purpose {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    color: white;
+}
+
+.opt {
+    margin-top: 10px;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#password-strength {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+h5 {
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.forget {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

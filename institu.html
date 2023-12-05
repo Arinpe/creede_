@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="individual.css">
+    <title>Creede</title>
+</head>
+<body>
+    <div class="signup-container">
+        <img src="img/Creede Logo.png" alt="creede" class="creede">
+        <form id="signupForm">
+            <h2 class="opt_">Create account</h2>
+                <div class="purpose">
+                    <h4>Individual</h4>
+                <h4>Institution</h4>
+                </div>
+            <label for="username" class="opt">Full Name</label>
+            <input type="text" id="FullName" name="fullname" required>
+
+            <label for="Institutionname" class="opt">Name of Institution</label>
+            <input type="text" id="InstitutionName" name="InstitutionName" required>
+
+            <label for="Institutionposition" class="opt">Position at Institution</label>
+            <input type="text" id="institutionposition" name="InstitutionPosition" required>
+            
+            <label for="email" class="opt">Institution Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password" class="opt">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password-strength"></div>
+            
+            <label for="confirmPassword" class="opt">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <button type="submit" id="submitBtn">Sign Up</button>
+            <h5>Forgot Password? Reset Password</h5>
+        </form>
+        <div class="forget">
+            <h5>Already have an account? Sign in</h5>
+        </div>
+        <p id="error-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
