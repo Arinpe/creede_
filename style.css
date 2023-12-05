@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.creede {
+    background-color: #484848;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.creede img {
+    max-height: 40px;
+}
+
+.start {
+    display: flex;
+}
+
+.start h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.start a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.start a:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
+
