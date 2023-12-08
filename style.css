@@ -75,6 +75,10 @@ body {
     align-items: center;
 }
 
+.building {
+    background-color: rgb(10, 10, 15);
+}
+
 .hire h1,
 .limit h1,
 .building h1 {
