@@ -12,25 +12,18 @@
         <form id="signupForm">
             <h2 class="opt_">Create account</h2>
                 <div class="purpose">
-                    <h4><a href="individual.html">Individual</a></h4>
+                    <h4><a href="individual.html" class="only">Individual</a></h4>
                         
                 <h4><a href="institu.html">Institution</a></h4>
                 </div>
+            <label for="did" class="opt">DID</label>
+            <input type="text" id="did" name="did" required>
+            <h4 class="generate">Don't have a DID? <a href="#">Generate DID</a></h4>
+            
             <label for="username" class="opt">Full Name</label>
             <input type="text" id="FullName" name="fullname" required>
             
-            <label for="email" class="opt">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password" class="opt">Password</label>
-            <input type="password" id="password" name="password" required>
-            <div id="password-strength"></div>
-            
-            <label for="confirmPassword" class="opt">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-            
-            <button type="submit" id="submitBtn">Sign Up</button>
-            <h5>Forgot Password? Reset Password</h5>
+            <button type="submit" id="submitBtn">Create Account</button>
         </form>
         <div class="forget">
             <h5>Already have an account? <a href="signin.html">Sign in</a></h5>
