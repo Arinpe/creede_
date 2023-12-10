@@ -245,11 +245,11 @@ body {
     gap: 10px;
 }
 
-.hire a:hover,
+/* .hire a:hover,
 .limit a:hover,
 .building a:hover {
     background-color: #e5b900;
-}
+} */
 
 .work-line{
     background-color: #141414;
@@ -316,8 +316,8 @@ footer {
     display: flex;
     background-color: #3168F4;
     mix-blend-mode: hard-light;
-    filter: blur(234.9px);
-    
+    filter: blur(200.9px);
+    justify-content: space-between;
 }
 
 footer img {
