@@ -30,6 +30,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.generate {
+    padding-left: 180px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.generate a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 
 #signupForm {
@@ -42,6 +53,10 @@ body {
 }
 
 .signin {
+    color: #fff;
+}
+
+.signin a {
     color: #fff;
 }
 
