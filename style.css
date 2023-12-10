@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    color: white;
+    /* color: white; */
     font-family: Inter;
 
 }
@@ -142,28 +142,58 @@ body {
 
 .building {
     background-color: rgb(10, 10, 15);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.building h1 {
+    font-size: 28px;
+    line-height: 45px;
+    background: radial-gradient(72.76% 72.69% at 50% 50%, #FFF 0%, rgba(255, 255, 255, 0.40) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 300px;
+}
+
+.building h3 {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+.building h5{
+    font-size: 10px;
+    margin-bottom: 20px;
+    color: #555;
+    gap: 28px;
+    line-height: 28px;
+    font-weight: 500px;
+    font-style: normal;
+    justify-content: center;
 }
 
 
-
 .hire h1,
-.limit h1,
-.building h1 {
+.limit h1 {
     font-size: 2em;
     margin-bottom: 5px;
     line-height: 15px;
 }
 
 .hire h2,
-.limit h2,
-.building h2 {
+.limit h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .hire h5,
 .limit h5,
-.building h5,
 .sec h5 {
     font-size: 10px;
     margin-bottom: 20px;
@@ -175,28 +205,30 @@ body {
 
 }
 
-    .hero-text{
-        color: #FFF;
-        /* font-family: Inter; */
-        font-size:20px;
-        line-height: 50px;
-        padding-left: 50px;
-        padding-top: 100px;
+.hero-text{
+     color: #FFF;
+    /* font-family: Inter; */
+    font-size:20px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-top: 100px;
     }
 
-    .hero-img {
-        width: 500px;
-        height: 350px;
-        padding: 30px;
-        position: absolute;
-        right: 50px;
-        top: 100px;
-        z-index: 10px;
+.hero-text h5 {
+     font-size: 10px;
+}
+    
+
+.hero-img {
+     width: 500px;
+    height: 350px;
+    padding: 30px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    z-index: 10px;
     }
 
-    .hero-text h5 {
-        font-size: 10px;
-    }
 
 .hire a,
 .limit a,
@@ -224,15 +256,13 @@ body {
 }
 
 .work {
-    /* background-color: black; */
     color: white;
     padding: 50px 20px;
     text-align: center;
     margin-top: 20px;
 }
 
-.work h1,
-.building h1 {
+.work h1{
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -256,19 +286,40 @@ body {
     margin-top: 20px;
 }
 
+/* .line-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.fade-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 2px;
+    animation: fadeInOut 10s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+} */
+
 footer {
-    background-color: #484848;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    background-color: #3168F4;
+    mix-blend-mode: hard-light;
+    filter: blur(234.9px);
+    
 }
 
 footer img {
     max-height: 40px;
-}
-
-footer h3 {
-    margin: 0;
-    font-size: 1em;
-    margin-top: 10px;
 }
