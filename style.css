@@ -10,12 +10,13 @@ body {
 }
 
 .navbar {
-    background-color: #484848;
-    padding: 15px;
+    background-color: rgba(38, 38, 38, 1);
+    padding: 10px 20px 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    height: 45px;
 }
 
 .creede img {
@@ -23,9 +24,26 @@ body {
 }
 
 .start {
-    /* background-color: white; */
-    border: black;
-    border-radius: 1px solid black;
+    display: flex;
+    padding: 5px 1px;
+    
+}
+
+.get {
+    background-color: rgb(10, 10, 10);
+    border-radius: 15px;
+    border: 5px solid black;
+    height: auto 51px;
+    width: auto 163px;
+}
+
+.sign {
+    border-radius: 15px;
+    border: 5px solid #fff;
+    /* padding: 10px 20px; */
+    text-decoration: none;
+    height: auto 51px;
+    width: auto 126px;
 }
 
 .start h2 {
@@ -46,13 +64,18 @@ body {
 .hero-container {
     display: flex;
     background: black; /* Uncomment this line if you want a background color */
+    justify-content: space-between;
+    position: relative;
 }
+
 
 .sec {
     background-color: white;
     color: black;
     padding: 20px;
     text-align: center;
+    position: relative;
+    z-index: 20px;
 }
 
 .sec h5.secure {
@@ -72,26 +95,33 @@ body {
 
 /* .hire, */
 .limit {
-    border: 2px solid #333; /* Border color */
-    border-radius: 10px; /* Border radius for rounded corners */
-    padding: 20px;
-    background-color: white;
-    color: black;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hire{
     border: 1px solid #a3a2a2; /* Border color */
-    border-radius: 10px; /* Border radius for rounded corners */
+    border-radius: 8px; /* Border radius for rounded corners */
     background-color: white;
     color: black;
     display: flex;
     align-items: center;
     margin: 0 auto;
     justify-content: space-between;
+}
+
+.pi {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.hire{
+    border: 1px solid #a3a2a2; /* Border color */
+    border-radius: 8px; /* Border radius for rounded corners */
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    
 }
 
 .pic {
@@ -102,10 +132,11 @@ body {
 }
 
 .spacing{
-    width:100%;
+    width:80%;
     justify-content: center;
     max-width: 1294px;
     padding: 0 73px;
+    margin-left: 5px;
 }
 
 
@@ -134,7 +165,7 @@ body {
 .limit h5,
 .building h5,
 .sec h5 {
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 20px;
     color: #555;
     gap: 28px;
@@ -143,6 +174,29 @@ body {
     font-style: normal;
 
 }
+
+    .hero-text{
+        color: #FFF;
+        /* font-family: Inter; */
+        font-size:20px;
+        line-height: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+
+    .hero-img {
+        width: 500px;
+        height: 350px;
+        padding: 30px;
+        position: absolute;
+        right: 50px;
+        top: 100px;
+        z-index: 10px;
+    }
+
+    .hero-text h5 {
+        font-size: 10px;
+    }
 
 .hire a,
 .limit a,
@@ -165,8 +219,12 @@ body {
     background-color: #e5b900;
 }
 
+.work-line{
+    background-color: #141414;
+}
+
 .work {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     padding: 50px 20px;
     text-align: center;
