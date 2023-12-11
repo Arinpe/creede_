@@ -73,15 +73,25 @@ body {
     background-color: white;
     color: black;
     padding: 20px;
+    /* padding-left: 25px; */
     text-align: center;
     position: relative;
     z-index: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sec h5.secure {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.sec img{
+    width: 30px;
+    height: 20px;
+}
+
+.sec h5 {
+    font-size: 15px;
     color: black;
+    /* padding-right: 150px; */
+    padding: 7px;
 }
 
 .blu {
@@ -255,11 +265,18 @@ body {
     background-color: #141414;
 }
 
+.vl {
+    border-left:#fff;
+    height: fit-content;
+}
+
 .work {
     color: white;
     padding: 50px 20px;
     text-align: center;
     margin-top: 20px;
+    background-image: url(img/shield1.png);
+    background-repeat: no-repeat;
 }
 
 .work h1{
@@ -267,14 +284,14 @@ body {
     margin-bottom: 20px;
 }
 
-.work h3,
-.upload {
+.work h3
+/* .upload  */
+{
     font-size: 1.5em;
     margin-top: 20px;
 }
 
-.work h5,
-.upload {
+.work h5 {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #555;
@@ -284,6 +301,21 @@ body {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
+}
+
+.create_ {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upload {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.verify {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* .line-container {
@@ -314,12 +346,20 @@ body {
 
 footer {
     display: flex;
-    background-color: #3168F4;
+    background-color: #060911;
     mix-blend-mode: hard-light;
-    filter: blur(200.9px);
+    /* filter: blur(200.9px); */
     justify-content: space-between;
+}
+
+.aside {
+    color: white;
+    padding-right: 50px;
+    font-family: Inter;
 }
 
 footer img {
     max-height: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
 }

@@ -14,22 +14,30 @@ body {
 .creede {
     display: block;
     margin: 20px;
-    width: 50px;
-    height: 20px;
+    width: 150px;
+    height: 70px;
     padding-left: 65px;
-    font-size: 25px;
 }
 
 .signup-container {
     max-width: 400px;
-    background-color: black;
+    /* background-color: black; */
     padding: 20px;
     /* border-radius: 50px;
     border: 1px solid black; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.generate {
+    padding-left: 180px;
+    color: #fff;
+    font-size: 10px;
+}
 
+.generate a {
+    color: #fff;
+    text-decoration: underline;
+}
 
 #signupForm {
     display: flex;
