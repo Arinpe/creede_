@@ -113,6 +113,14 @@ h5 {
     margin-top: 10px;
 }
 
+.forget h5 {
+    color: #fff;
+}
+
+.forget a {
+    color: #fff;
+}
+
 #error-message {
     color: red;
     text-align: center;
