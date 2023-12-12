@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="h-full min-h-screen flex flex-col">
+      <header class="sticky top-0 z-10 bg-[#141414] py-5 pl-[2.08%] pr-[4.17%]">
+        <nav class="flex items-center justify-between">
+          <a href="#">
+            <img src="/img/logo.svg" alt="logo" width="71.6" height="25" />
+          </a>
+          <div class="flex items-center gap-8">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                src="/img/notification.svg"
+                alt="notification"
+                width="19"
+                height="20"
+              />
+              <p class="text-white">Notification</p>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <img
+                src="/img/settings.svg"
+                alt="settings"
+                width="19"
+                height="20"
+              />
+              <p class="text-white">Settings</p>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div class="flex w-full bg-[#1E1E1E] h-full grow">
+        <aside
+          class="fixed w-[17.4%] h-full min-h-screen pt-11 flex flex-col bg-[#FFFFFF10] gap-8 pl-[2.08%]"
+        >
+          <a href="#" class="flex items-center gap-6">
+            <img
+              src="/img/dashboard-ic.svg"
+              alt="dashboard"
+              width="24"
+              height="24"
+            />
+            <p class="text-white">Dashboard</p>
+          </a>
+          <a href="#" class="flex items-center gap-6">
+            <img
+              src="/img/objects-ic.svg"
+              alt="objects"
+              width="24"
+              height="24"
+            />
+            <p class="text-white">Objects</p>
+          </a>
+          <a href="#" class="flex items-center gap-6">
+            <img src="/img/status-ic.svg" alt="status" width="24" height="24" />
+            <p class="text-white">Status</p>
+          </a>
+          <a href="#" class="flex items-center gap-6">
+            <img
+              src="/img/notification.svg"
+              alt="notification"
+              width="24"
+              height="24"
+            />
+            <p class="text-white">Notification</p>
+          </a>
+        </aside>
+        <main
+          class="ml-[17.4%] h-full pt-7 w-[82.3%] pl-[2.08%] pr-[3.17%] pb-20"
+        >
+          <div
+            class="w-full h-[222px] rounded-[20px] bg-[url('/img/dashboard-main-art.svg')] bg-cover relative"
+          >
+            <img
+              src="/img/user.svg"
+              alt="user"
+              width="150"
+              height="150"
+              class="absolute -bottom-5 left-14"
+            />
+            <button class="absolute right-5 top-5">
+              <img src="/img/edit.svg" alt="edit" width="39" height="39" />
+            </button>
+          </div>
+
+          <div class="mt-11 flex items-start justify-between pr-5 pl-8">
+            <div class="flex flex-col gap-2">
+              <p class="text-[2rem] text-white font-semibold">
+                Nividea Institute
+              </p>
+              <p class="text-white">Institute of Technology</p>
+            </div>
+            <button>
+              <img src="/img/edit-grey.svg" alt="edit" width="39" height="39" />
+            </button>
+          </div>
+
+          <div class="mt-11 grid grid-cols-3 gap-[30px]">
+            <div class="rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5">
+              <div class="flex flex-col h-full">
+                <p class="text-white font-semibold px-5">Storage</p>
+                <div class="mt-2 flex items-center justify-between px-5">
+                  <p class="text-sm text-white">Using 0GB of 10Gb</p>
+                  <p class="text-sm text-white">0 files</p>
+                </div>
+                <img
+                  src="/img/progress.svg"
+                  alt="progress"
+                  class="w-full mt-auto"
+                  height="22"
+                />
+              </div>
+            </div>
+            <div class="rounded-[20px] bg-[#FFFFFF10] h-[140px] p-5">
+              <div class="flex flex-col h-full">
+                <p class="text-white font-semibold">Number of Uploads</p>
+                <p class="text-5xl font-semibold mt-auto text-white">3</p>
+              </div>
+            </div>
+            <div class="rounded-[20px] bg-[#FFFFFF10] h-[140px] p-5">
+              <div class="flex flex-col h-full">
+                <p class="text-white font-semibold">Number of Collections</p>
+                <p class="text-5xl font-semibold mt-auto text-white">12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <p class="text-white text-2xl font-semibold">Issued Credentials</p>
+            <div class="mt-6 grid grid-cols-2 gap-[30px]">
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6 gap-4"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+              <div
+                class="w-full flex items-center justify-between rounded-[20px] bg-[#FFFFFF10] h-[140px] py-5 px-6"
+              >
+                <div class="flex items-start gap-5 w-full">
+                  <img
+                    src="/img/futa-logo.png"
+                    alt="school logo"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="flex flex-col gap-[6px] max-w-[75%]">
+                    <p class="text-lg font-semibold text-white truncated-text">
+                      Faculty of Agricultural Science
+                    </p>
+                    <p class="text-white truncated-text">
+                      Federal University of Technology Akure
+                    </p>
+                    <p class="text-sm text-[#FFFFFF40]">
+                      Jul 2019 - Present • 4 yrs 8 mos
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-[#141414] rounded-full bg-white p-[10px] font-semibold"
+                >
+                  Open
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
