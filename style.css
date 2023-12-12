@@ -100,7 +100,7 @@ body {
 
 .restt {
     padding-left: 50px;
-
+    max-width: 50%;
 }
 
 /* .hire, */
@@ -115,11 +115,15 @@ body {
     justify-content: space-between;
 }
 
+.limit-text {
+    max-width: 50%;
+}
 .pi {
     width: 600px;
     height: 600px;
     object-fit: contain;
     margin-left: 15px;
+    max-width: 50%;
 }
 
 .hire{
@@ -131,14 +135,14 @@ body {
     align-items: center;
     margin: 0 auto;
     justify-content: space-between;
-    
 }
 
 .pic {
     width: 692px;
     height: 692px;
     object-fit: contain;
-    margin-right: -7rem;
+    margin-right: -3rem;
+    max-width: 50%;
 }
 
 .spacing{
@@ -164,14 +168,16 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 300px;
+    /* padding-left: 320px;
+    justify-content: center; */
+    text-align: center;
 }
 
 .building h3 {
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px; /* 175% */
@@ -246,12 +252,12 @@ body {
 .building a {
     border-radius: 8px;
     border: 1.5px solid #141414;
-    padding: 17px 36px;
+    padding: 25px 40px;
     color: #141414;
     text-decoration: none;
     background-color: white;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-content: center; */
     gap: 10px;
 }
 
@@ -263,6 +269,7 @@ body {
 
 .work-line{
     background-color: #141414;
+    position: relative;
 }
 
 .vl {
@@ -275,14 +282,36 @@ body {
     padding: 50px 20px;
     text-align: center;
     margin-top: 20px;
-    background-image: url(img/shield1.png);
-    background-repeat: no-repeat;
+    background: #000;
+    /* background-image: url(img/shield1.png);
+    background-repeat: no-repeat; */
+}
+
+.work_ {
+    position: relative;
+    background: rgba(245, 245, 245, 0.05);
+    padding: 100px 50px;
+    backdrop-filter: blur(17px);
 }
 
 .work h1{
     font-size: 2em;
     margin-bottom: 20px;
 }
+
+.work-img {
+    position: absolute;
+    top: -47px;
+}
+
+.work_img img {
+    position: absolute;
+    bottom: -47px;
+    right: 15px;
+    /* width: 541px;
+    height: 541px; */
+}
+
 
 .work h3
 /* .upload  */
@@ -292,49 +321,74 @@ body {
 }
 
 .work h5 {
-    font-size: 1.2em;
+    font-size: 16px;
     margin-bottom: 20px;
     color: #555;
 }
 
 .work img {
     max-width: 100%;
-    height: auto;
+    height: 122px;
+    width: 122px;
     margin-top: 20px;
 }
 
 .create_ {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.create_te {
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .upload {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+.upload_ {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .verify {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
-/* .line-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.verify_ {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ .line-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    margin: 5px;
+}
+
+.line-container::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    background-color: grey;
+    width: 1px;
 }
 
 .fade-line {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    opacity: 2px;
-    animation: fadeInOut 10s infinite;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
 }
-
+/*
 @keyframes fadeInOut {
     0%, 100% {
         opacity: 0;
