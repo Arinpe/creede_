@@ -27,8 +27,7 @@ body {
 
 .start {
     display: flex;
-    padding: 5px 1px;
-    
+    padding: 5px 1px; 
 }
 
 .get {
@@ -85,11 +84,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto 656px;
+    height: auto 19px;
 }
 
 .sec img{
-    width: 30px;
-    height: 20px;
+    width: 36px;
+    height: 36px;
 }
 
 .sec h5 {
@@ -106,6 +107,18 @@ body {
 .restt {
     padding-left: 50px;
     max-width: 50%;
+    width: fixed 1294px;
+    height: fixed 573px;
+}
+
+.restt h1, h2 {
+    width: fixed 605px;
+    height: auto 192px;
+}
+
+.restt h5 {
+    width: fixed 553px;
+    height: auto 84px;
 }
 
 /* .hire, */
@@ -250,7 +263,8 @@ body {
 }
 
 .hero-text input[type="text"] {
-    width: 70.5%;
+    width: 349px;
+    height: 49px;
     padding: 10px;
     margin-bottom: 80px;
     box-sizing: border-box;
@@ -272,8 +286,7 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s ease;
     outline: none;
-    /* width: 150px;
-    height: 10px; */
+    height: 49px;
 }
 
 .hero-text button:hover {
@@ -281,7 +294,7 @@ body {
 }
 
 .fa-search {
-    font-size: 18px;
+    font-size: 18px
 }
 
 .hero-img {
@@ -301,13 +314,15 @@ body {
 .building a {
     border-radius: 8px;
     border: 0.5px solid #141414;
-    padding: 25px 40px;
+    padding: 5px 10px;
     color: #141414;
     text-decoration: none;
     background-color: white;
     /* justify-content: center;
     align-content: center; */
     gap: 10px;
+    width: auto 163px;
+    height: auto 53px;
 }
 
 /* .hire a:hover,
