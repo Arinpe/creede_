@@ -137,8 +137,8 @@ body {
     max-width: 50%;
 }
 .pi {
-    width: 600px;
-    height: 600px;
+    width: fixed 541px;
+    height: fixed 482px;
     object-fit: contain;
     margin-left: 15px;
     max-width: 50%;
@@ -156,8 +156,8 @@ body {
 }
 
 .pic {
-    width: 692px;
-    height: 692px;
+    width:fixed 692px;
+    height: fixed 692px;
     object-fit: contain;
     margin-right: -3rem;
     max-width: 50%;
@@ -169,6 +169,7 @@ body {
     max-width: 1294px;
     padding: 0 73px;
     margin-left: 5px;
+    font-size: 16px;
 }
 
 
