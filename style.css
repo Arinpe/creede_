@@ -3,7 +3,8 @@ body {
     /* color: white; */
     font-family: Inter;
     background-color:#141414;
-
+    /* width: 1440px; */
+    /* height: 3172px; */
 }
 
 .contain {
@@ -167,9 +168,9 @@ body {
 }
 
 .spacing{
-    width:100%;
+    /* width:95%; */
     justify-content: center;
-    max-width: 1294px;
+    /* max-width: 1294px; */
     padding: 0 73px;
     /* margin-left: 5px; */
     font-size: 16px;
