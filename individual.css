@@ -71,7 +71,7 @@ body {
 
 h4 a {
     text-decoration: none;
-    /* color: black; This ensures the link inherits the color from its parent (h4) */
+     color: white; 
 }
 
 .only {
@@ -82,38 +82,44 @@ h4 a {
     color: rgb(0, 0, 0);
 }
 
-.institu {
-    color: #fff;
+.only a {
+    color: rgb(0, 0, 0);
 }
 
-a:link {
+.institu a:link{
     color: white;
-    
+}
+
+/* a:link {
+    color: white; 
+  } */
+
+  #submitBtn{
+    color: black;
+    background-color: #fff;
   }
   
   /* visited link */
-   a:visited {
+   /* a:visited {
     color: white;
-  }
+  } */
    
   /* mouse over link */
-  a:hover {
+  /* a:hover {
     color: black;
-    /* background-color: #ffffff; */
-  }
+    background-color: #ffffff;
+  } */
   
   /* selected link */
-  a:active {
+  /* a:active {
     color: white;
-  }
+  } */
 
-h4 a:hover {
-    text-decoration: none; /* Add underline on hover if you want */
-    /* border: 1px solid white; */
-    /* border-radius: 1px; */
+/* h4 a:hover {
+    text-decoration: none; Add underline on hover if you want     border-radius: 1px;
     color: black;
-    /* background-color: #fff; */
-}
+     background-color: #fff;
+} */
 
 
 .opt {
@@ -139,7 +145,7 @@ button {
     padding: 10px;
     cursor: pointer;
     border-radius: 4px;
-    color: #fff;
+    color: black;
 }
 
 button:hover {
