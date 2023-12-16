@@ -8,12 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function generateRandomDID() {
-        const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-        const didLength = 20;
-        let did = 'did:';
+        const characters = 'tool solve walnut will inch romance blood jelly medal love laundry horse'.split(' ');
+        const didLength = 5;
+        let did = 'did: ';
         
         for (let i = 0; i < didLength; i++) {
-            did += characters.charAt(Math.floor(Math.random() * characters.length));
+            did += characters[Math.floor(Math.random() * characters.length)];
+            if (i < (didLength - 1)) {
+                did += ' '
+            }
         }
 
         return did;
