@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function generateRandomDID() {
         const characters = 'tool solve walnut will inch romance blood jelly medal love laundry horse'.split(' ');
-        const didLength = 5;
+        const didLength = 12;
         let did = 'did: ';
         
         for (let i = 0; i < didLength; i++) {
