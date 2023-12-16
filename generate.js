@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     generateButton.addEventListener('click', function () {
         const generatedDID = generateRandomDID();
-        didResult.textContent = `Generated DID: ${generatedDID}`;
+        didResult.textContent = `${generatedDID}`;
     });
 
     function generateRandomDID() {
         const characters = 'tool solve walnut will inch romance blood jelly medal love laundry horse'.split(' ');
         const didLength = 12;
-        let did = 'did: ';
+        let did = ' ';
         
         for (let i = 0; i < didLength; i++) {
             did += characters[Math.floor(Math.random() * characters.length)];
