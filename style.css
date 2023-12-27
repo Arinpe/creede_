@@ -5,6 +5,7 @@ body {
     background-color: #141414;
     /* width: 1440px; */
     /* height: 3172px; */
+    overflow-x:hidden;
 }
 
 .contain {

@@ -7,13 +7,13 @@
 //     setUserDid(did);
 //   };
 //   // create a custom hook to always stay connected
-  
+
 //   const useWeb5 = () => {
 //     const [web5, setWeb5] = useState({});
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState(null);
 //     const [did, setDid] = useState("");
-  
+
 //     useEffect(() => {
 //       const initWeb5 = async () => {
 //         setLoading(true);
@@ -30,7 +30,7 @@
 //           setError();
 //         }
 //       };
-  
+
 //       initWeb5();
 //     }, []);
 //     return { web5, did, loading, error };
@@ -42,7 +42,7 @@
 //       institutionName: "",
 //       positionAtInstitution: "",
 //     };
-  
+
 //     try {
 //       const { record } = await web5.dwn.records.create({
 //         data: profile,
@@ -52,8 +52,8 @@
 //         },
 //       });
 //       setLoading(false);
-  
-//       // redirect if successful? 
+
+//       // redirect if successful?
 //     } catch (error) {
 //       console.error("Error creating DID:", error);
 //       setLoading(false);
@@ -61,16 +61,33 @@
 //     }
 //   };
 
-  window.addEventListener('DOMContentLoaded', () => {
-    const generateDid = async () => {
-      const connectedDidInstance = await Web5.Web5.connect();
-      return connectedDidInstance.did;
-    }
+window.addEventListener("DOMContentLoaded", () => {
+  const generateDid = async () => {
+    const connectedDidInstance = await Web5.Web5.connect();
+    return connectedDidInstance.did;
+  };
 
-    document.querySelector("#didGeneratorBtn").addEventListener('click', async () => {
-      const did = await generateDid()
-      document.querySelector('#didResult').innerHTML = did;
-      console.log('User DID is: ', did)
-    })
-  })
-  
+  document
+    .querySelector("#didGeneratorBtn")
+    .addEventListener("click", async () => {
+      const did = await generateDid();
+      document.querySelector("#didResult").innerHTML = did;
+      console.log("User DID is: ", did);
+    });
+
+  function copyToClipboard() {
+    // Select the text from the element with the ID "didResult"
+    var copyText = document.getElementById("didResult");
+    var range = document.createRange();
+    range.selectNode(copyText);
+    window.getSelection().removeAllRanges(); // Clear previous selections
+    window.getSelection().addRange(range); // Select the text
+    document.execCommand("copy"); // Copy the selected text to clipboard
+    window.getSelection().removeAllRanges(); // Clear the selection
+    alert("Copied to clipboard!");
+  }
+
+  // Attach the copyToClipboard function to the button click event
+  var copyButton = document.getElementById("copyButton");
+  copyButton.addEventListener("click", copyToClipboard);
+});

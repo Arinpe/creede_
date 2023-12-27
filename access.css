@@ -6,7 +6,6 @@ body {
     margin: 0 auto;
     background: rgba(1, 3, 17, 0.907);
     font-family: Inter;
-   
 }
 
 .container {
@@ -31,11 +30,13 @@ body {
     width: 547px;
     height: 444px;
 }
-
-
+ 
+.enter {
+    padding-top: 15px;
+}
 
 #generateButton {
-    padding: 5px 1px;
+    padding: 10px 220px;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
